@@ -1,11 +1,11 @@
-# 🔍 IOC Enrichment and Automated Triage Platform v2.0
+#  IOC Enrichment and Automated Triage Platform v2.0
 
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 > **A production-grade SOC automation tool that ingests Indicators of Compromise (IOCs), queries multiple threat intelligence APIs concurrently, and generates structured triage reports with severity scoring, score transparency, and SQLite case management.**
 
-## 🎯 What Makes This Different
+##  What Makes This Different
 
 This isn't just a script — it's a **mini SOAR platform** that demonstrates enterprise-level security automation concepts:
 
@@ -23,7 +23,7 @@ This isn't just a script — it's a **mini SOAR platform** that demonstrates ent
 | Case Management | None | **SQLite with audit trail** |
 | Reports | JSON only | **JSON + Markdown + CSV** |
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 ioc-triage-platform/
@@ -48,7 +48,7 @@ ioc-triage-platform/
 └── README.md
 ```
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 - Python 3.11+
@@ -111,7 +111,7 @@ python src/main.py --validate
 python src/main.py --clear-cache
 ```
 
-## ⚡ Performance: Concurrent vs Sequential
+##  Performance: Concurrent vs Sequential
 
 | IOCs | Sequential | Concurrent | Speedup |
 |------|-----------|------------|---------|
@@ -121,7 +121,7 @@ python src/main.py --clear-cache
 
 *Based on 2s average API response time per source*
 
-## 📊 Scoring Methodology
+##  Scoring Methodology
 
 ### Weighted Composite Algorithm
 
@@ -225,12 +225,12 @@ timeline = cm.get_timeline("CASE-20260721-0001")
 stats = cm.get_stats()
 ```
 
-## 📋 Sample Output
+##  Sample Output
 
 ### Console Output
 
 ```
-🛡️  TRIAGE COMPLETE
+ TRIAGE COMPLETE
 ======================================================================
   🔴 Critical: 2
   🟠 High: 3
@@ -295,7 +295,7 @@ Human-readable report with:
 
 Spreadsheet-friendly format for SIEM import or Excel analysis.
 
-## 🔒 Security Considerations
+##  Security Considerations
 
 - **API keys in `.env`** — never commit to Git (`.env` is in `.gitignore`)
 - **Rate limiting** — token bucket prevents API abuse
@@ -305,7 +305,7 @@ Spreadsheet-friendly format for SIEM import or Excel analysis.
 - **Request timeouts** — prevents hanging connections
 - **Cache TTL** — prevents stale data beyond 24 hours
 
-## 🧪 Testing
+##  Testing
 
 ```bash
 # Run all tests
@@ -337,20 +337,11 @@ pytest tests/test_utils.py -v
 - [ ] CI/CD with GitHub Actions
 - [ ] Additional TI sources (AlienVault OTX, GreyNoise)
 
-## 📝 Blog Post: Building a Mini SOAR Platform in Python
+##  Blog Post: Building a Mini SOAR Platform in Python
 
 > *"In a typical SOC, analysts spend 15-30 minutes per IOC manually pivoting between VirusTotal, AbuseIPDB, and Shodan. This Python-based automation reduces that to under 30 seconds while producing structured, auditable triage reports with full score transparency and SQLite case management..."*
 
 [Read the full blog post](link-to-your-blog)
 
-## 📄 License
 
-MIT License — see [LICENSE](LICENSE) for details.
 
-## 🤝 Contributing
-
-Contributions welcome! Please open an issue or submit a PR.
-
----
-
-**Built with ❤️ for SOC analysts everywhere.**
