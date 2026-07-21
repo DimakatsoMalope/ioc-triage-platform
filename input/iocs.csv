@@ -1,0 +1,11 @@
+ioc,type
+8.8.8.8,ip
+1.1.1.1,ip
+185.220.101.1,ip
+192.168.1.1,ip
+10.0.0.1,ip
+google.com,domain
+evil-domain-example.com,domain
+44d88612fea8a8f36de82e1278abb02f,filehash
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,filehash
+https://example-phishing.com/login,url
